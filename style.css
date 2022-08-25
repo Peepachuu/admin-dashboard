@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+}
+
+:root {
+    --sidebar-bg-color: red;
+    --header-bg-color: grey;
+    --main-content-bg-color: blue;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 150px 1fr;
+}
+
+header {
+    background-color: var(--header-bg-color);
+}
+
+.sidebar {
+    background-color: var(--sidebar-bg-color);
+    grid-row: span 2;
+}
+
+.main-content {
+    background-color: var(--main-content-bg-color);
+}
+
