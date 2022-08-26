@@ -5,10 +5,11 @@
 
 body, html {
     height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
-    --sidebar-bg-color: red;
+    --sidebar-bg-color: #84cc16;
     --header-bg-color: grey;
     --main-content-bg-color: blue;
 }
@@ -63,10 +64,22 @@ header .buttons button {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    color: white;
+    font-weight: 500;
 }
 
 .sidebar li {
     padding: 16px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: solid underline 2px;
+    text-underline-offset: 4px;
 }
 
 .main-content {
