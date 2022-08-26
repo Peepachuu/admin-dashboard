@@ -5,7 +5,6 @@
 
 body, html {
     height: 100%;
-    
 }
 
 :root {
@@ -17,13 +16,46 @@ body, html {
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 header {
     background-color: var(--header-bg-color);
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    row-gap: 1rem;
+    padding: 1rem;
 }
 
+header .user-info {
+    display: flex;
+    justify-self: end;
+    gap: 8px;
+}
+
+header .searchbar{
+    display: flex;
+    gap: 8px;
+}
+
+header .searchbar input {
+    flex: 1;
+}
+
+header .greetings {
+    display: flex;
+    gap: 8px;
+}
+
+header .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+header .buttons button {
+    padding: 8px;
+}
 .sidebar {
     background-color: var(--sidebar-bg-color);
     grid-row: span 2;
