@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 body, html {
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -85,8 +89,14 @@ header .buttons button {
 .main-content {
     background-color: var(--main-content-bg-color);
     padding: 8px 16px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    column-gap: 8px;
 }
 
+.projects {
+    grid-row: span 2;
+}
 .projects .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -99,4 +109,12 @@ header .buttons button {
     border-left: 4px solid orange;
     padding: 16px;
     min-height: 170px;
+}
+
+.main-content ul {
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
