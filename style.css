@@ -10,8 +10,8 @@ body, html {
 
 :root {
     --sidebar-bg-color: #84cc16;
-    --header-bg-color: grey;
-    --main-content-bg-color: blue;
+    --header-bg-color: #fff;
+    --main-content-bg-color: #ecfccb;
 }
 
 body {
@@ -84,4 +84,18 @@ header .buttons button {
 
 .main-content {
     background-color: var(--main-content-bg-color);
+    padding: 8px 16px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project {
+    background-color: white;
+    border-radius: 4px;
+    border-left: 4px solid orange;
+    padding: 16px;
 }
