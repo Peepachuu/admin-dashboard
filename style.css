@@ -74,6 +74,9 @@ header .buttons button {
 
 .sidebar li {
     padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .sidebar a {
@@ -127,4 +130,8 @@ header .buttons button {
 }
 .main-content .announcements p {
     font-size: 0.85rem;
+}
+
+.icon {
+    height: 24px;
 }
